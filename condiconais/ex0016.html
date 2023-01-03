@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+      body {
+            font: normal 14pt Arial;
+        }
+        input {
+            font: normal 13pt Arial;
+            width: 100px
+        }
+        div#para{
+            font: normal 13pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <H1>Verificação de patriotismo</H1>
+    <div id="para">Digite seu país de origem:</div> <input type="text" name="txtna" id="txtna">
+    <input type="button" value="Verificar" onclick="br()">
+    <div id="res">
+
+    </div>
+    <script>
+        function br(){
+            var txtna = document.querySelector('input#txtna')
+            var res = document.querySelector('div#res')
+            var nacionalidade = (txtna.value)
+            res.innerHTML = (`Seu pais de origem é ${nacionalidade}`)
+
+            if (nacionalidade == 'Brasil' || nacionalidade =='brasil'){
+                res.innerHTML += '<p>Você é <strong>Brasileiro</strong>!!</p>'
+            }else if (nacionalidade == 'Alemanha')
+             {
+                res.innerHTML += '<p>Você é <strong>Alemão!</strong></p>'
+            }else {
+                res.innerHTML += '<p>Você é estrangeiro!</p>'
+
+            }
+            
+
+
+
+        }
+    </script>
+    
+</body>
+</html>
