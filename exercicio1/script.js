@@ -5,7 +5,7 @@ function carregar (){
     var hora = data.getHours()
     var minutos = data.getMinutes()
   
-    msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos!`
+    msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos`
    
     if (hora < 6){
         img.src = 'noite.png'
@@ -17,5 +17,6 @@ function carregar (){
         document.body.style.background = '#b9846f'
     }else {
         img.src = 'noite.png'
+        document.body.style.background = '#515154'
     }
 }
