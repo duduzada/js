@@ -1,14 +1,22 @@
 function cont(){
 
-var inicio = document.getElementById('init')
-var fim = document.getElementById('fim')
-var passo = document.getElementById('passo')
-var res = document.getElementById('res')
+let inicio = document.getElementById('init')
+let fim = document.getElementById('fim')
+let passo = document.getElementById('passo')
+let res = document.getElementById('res')
 
-if (inicio.value == "" || fim == ""){
-    res.innerHTML = ('Impossível contar, inicio ou fim não podem estar vazias.')
-}else if (passo.value == "")
-    alert('Passo inválido! Considerando PASSO 1')
+if (inicio.value == "" || fim.value == "" || passo.value == ""){
+    res.innerHTML = ('Impossível contar, inicio, fim ou passo não podem estar vazios.')
+}else{
+    res.innerHTML = ('Contando...')
+    let i = Number(inicio.value)
+    let f = Number(fim.value)
+    let p = Number(passo.value)
 
-
+    for(let c = 1; c<=f ; c +=p ){
+        
+    }
 }
+    }
+
+
