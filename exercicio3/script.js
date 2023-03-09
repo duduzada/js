@@ -8,7 +8,7 @@ let res = document.getElementById('res')
 if (inicio.value == "" || fim.value == "" || passo.value == ""){
     alert('[ERRO] Dados Faltantes')
     res.innerHTML = ('Impossível contar, inicio, fim ou passo não podem estar vazios.')
-}else{
+}else {
     res.innerHTML = ('Contando: <br>')
     let i = Number(inicio.value)
     let f = Number(fim.value)
